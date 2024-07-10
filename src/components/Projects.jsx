@@ -2,8 +2,10 @@ import { Grid } from "@mui/material";
 import CardProjects from "./CardProjects";
 import eska from "../assets/eska.png"
 import interia from "../assets/Interia.png"
+import donasi from "../assets/donasi.png"
 import { motion } from 'framer-motion'
 import { textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
 
@@ -34,7 +36,7 @@ export default function Projects() {
             image: eska,
         },
         {
-            name: "interia",
+            name: "Interia",
             description:
                 "Simple E-Commerce Web Application to buy and sell furniture products.",
             tags: [
@@ -54,6 +56,23 @@ export default function Projects() {
             image: interia,
             source_code_link: "https://github.com/DanielsonNg/Simple-E-Commerce",
         },
+        {
+            name: "HopefulHarbor",
+            description:
+                "Donation Web-Application for Item Donation, Crowdfunding, and Learning.",
+            tags: [
+                {
+                    name: "react",
+                    color: "lightblue",
+                },
+                {
+                    name: "laravel",
+                    color: "red",
+                },
+            ],
+            image: donasi,
+            source_code_link: "https://github.com/sije7/skripsi",
+        },
     ]
     return (
         <>
@@ -62,8 +81,13 @@ export default function Projects() {
                     <Grid item>
                         <p style={{ fontSize: '32px', fontWeight: 'lighter' }}>My Past Developments</p>
                     </Grid>
-                    <Grid item style={{ marginTop: '-30px' }}>
-                        <h1 style={{fontSize:'64px'}}>Projects</h1>
+                    <Grid container direction={"row"} sx={{display:'flex', justifyContent:'space-between'}}>
+                        <Grid item style={{ marginTop: '-30px' }}>
+                            <h1 style={{ fontSize: '64px' }}>Projects</h1>
+                        </Grid>
+                        <Grid  item style={{ marginTop: '-30px' }} onClick={() => window.open("https://github.com/DanielsonNg", '_blank').focus()}>
+                            <h1 style={{ fontSize: '24px', fontWeight: 'lighter', alignItems:'flex-end' }}>Check Out my Github Profile</h1>
+                        </Grid>
                     </Grid>
                 </motion.div>
                 <Grid container direction={'row'} spacing={5}>
