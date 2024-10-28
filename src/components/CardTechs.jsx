@@ -11,8 +11,8 @@ export default function CardTech(props) {
             >
                 <Card sx={{
                     minWidth: '200px', minHeight: '150px',
-                    border: 'double 3px transparent',
-                    borderRadius: '30px',
+                    border: 'double 0.5px transparent',
+                    borderRadius: '10px',
                     backgroundOrigin: 'border-box',
                     backgroundClip: 'content-box, border-box',
                     backgroundImage: "linear-gradient(#15505c, #242424), linear-gradient( #76c0cf , #15505c, #1e788a)",
@@ -20,7 +20,7 @@ export default function CardTech(props) {
                 }}>
 
                     <Grid sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <img src={props.image} width={'150px'} height={'150px'}>
+                        <img src={props.image} style={{objectFit:'contain'}} width={'150px'} height={'150px'} loading="lazy">
                         </img>
                     </Grid>
                     <CardContent>

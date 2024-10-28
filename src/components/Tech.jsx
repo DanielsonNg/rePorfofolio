@@ -7,6 +7,7 @@ import js from "../assets/js.png"
 import laravel from "../assets/laravel.png"
 import postgres from "../assets/postgres.png"
 import mui from "../assets/mui.png"
+import mongodb from "../assets/Mongo.png"
 
 export default function Tech() {
 
@@ -40,6 +41,10 @@ export default function Tech() {
             image : mui,
             text : "Material UI"
         },
+        ,{
+            image: mongodb,
+            text: "MongoDB"
+        }
        
 
     ]
