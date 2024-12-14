@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 import inddit from "../assets/Inddit.png"
+import Crypto from "../assets/Crypto.png"
 
 export default function Projects() {
 
@@ -91,6 +92,26 @@ export default function Projects() {
             image: inddit,
             source_code_link: "https://github.com/DanielsonNg/Inddit",
         },
+        {
+            name: "Crypto Tracker",
+            description: "Crypto and NFT Price Tracker with React, Expres, Typescript, CoinGeckoAPI",
+            tags: [
+                {
+                    name: "Express",
+                    color: "green",
+                },
+                {
+                    name: "React",
+                    color: "lightblue",
+                },
+                {
+                    name: "Typescript",
+                    color: "gray",
+                },
+            ],
+            image: Crypto,
+            source_code_link: "https://github.com/DanielsonNg/ReCrypto",
+        }
     ]
     return (
         <>
@@ -104,7 +125,7 @@ export default function Projects() {
                             <h1 style={{ fontSize: '64px' }}>Projects</h1>
                         </Grid>
                         <Grid item style={{ marginTop: '-30px' }} onClick={() => window.open("https://github.com/DanielsonNg", '_blank').focus()}>
-                            <h1 style={{ fontSize: '24px', fontWeight: 'lighter', alignItems: 'flex-end', cursor:'pointer' }}>Check Out my Github Profile</h1>
+                            <h1 style={{ fontSize: '24px', fontWeight: 'lighter', alignItems: 'flex-end', cursor: 'pointer' }}>Check Out my Github Profile</h1>
                         </Grid>
                     </Grid>
                 </motion.div>
