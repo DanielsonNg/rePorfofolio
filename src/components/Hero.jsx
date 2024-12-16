@@ -9,7 +9,7 @@ export default function Hero(){
             }}>
             <Grid item xs={12} md={6} style={{textAlign:'center'}}>
               <h1>Hi, i am Danielson</h1>
-              <h2>Fullstack Web Developer</h2>
+              <h2>Software Engineer</h2>
             </Grid>
             {/* Insert 3d Here */}
             <Grid item xs={12} md={6} sx={{height:'600px'}}>

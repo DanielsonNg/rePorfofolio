@@ -8,6 +8,8 @@ import laravel from "../assets/laravel.png"
 import postgres from "../assets/postgres.png"
 import mui from "../assets/mui.png"
 import mongodb from "../assets/Mongo.png"
+import git from "../assets/Git.png"
+import Ts from "../assets/Ts.png"
 
 export default function Tech() {
 
@@ -44,6 +46,14 @@ export default function Tech() {
         ,{
             image: mongodb,
             text: "MongoDB"
+        },
+        {
+            image: git,
+            text: "Git"
+        },
+        {
+            image:Ts,
+            text: "Typescript"
         }
        
 
